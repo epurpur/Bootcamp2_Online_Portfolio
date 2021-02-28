@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Erich Purpur Online Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Erich Purpur Portfolio</h1>
+        <nav>
+            <a href="#about-me-heading">About Me</a>   <!-- Maybe slow delay involving webkit for hightlighted elements?-->
+            <a href="#work-portfolio">Work</a>
+            <a href="#">Contact</a>
+            <a href="#">Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-section">
+            <div id='about-me-heading'>
+                <h2>About Me</h2>
+                <img src="https://avatars.githubusercontent.com/u/36010345?s=460&u=10800388b8f1955e283ad5dec7a574f39e9215af&v=4" alt="Image of Erich with mountains and water">
+            </div>
+            <div id='about-me-info'>
+                <p>I'm currently a Research Librarian for Science & Engineering at the University of Virginia (UVA) in Charlottesville, VA. My background is in Geographic Information Systems (GIS) and I am
+                most interested in combining my programming skills with GIS applications, in particular Free and Open Source (FOSS) GIS software. I teach workshops and courses
+                at UVA related to python programming and GIS topics. I also participate in developing internal UVA library web applications, built on python web framworks such as Django
+                and Flask, as well as data wrangling and data science methods. On the side, I've participated in the development of a plugin for QGIS, an open source GIS mapping software.
+                The plugin, called EcoValuator, is a downloadable package to QGIS. I've also collaborated with a friend, who is a real estate agent, to develop a multi-faceted project involving
+                a direct mailing campaign, managing internal data in Salesforce, and developing workflows to interface with 3rd part software.
+                <br></br>
+                In my free time I love to be outside, especially rock climbing and skiing. I also like to learn foreign languages, travel, cook badly, and spend time with my girlfriend.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="work-portfolio">
+            <h2 id="work-portfolio-title">Work Portfolio</h2>
+            <div id="work-cards">
+                <article class="work-card">
+                    <a href="https://onefigrapp.lib.virginia.edu/app/" target="_blank"><img src="./assets/images/onefigrapp.png" alt="screenshot from onefigrapp, UVA Library application"></a> 
+                </article>
+                <article class="work-card">
+                    <a href="http://www.keylogeconomics.com/ecovaluator.html" target="_blank"><img src="./assets/images/ecovaluator.png" alt="QGIS EcoValuator plugin screnshot"></a> 
+                </article>
+                <article class="work-card">
+                    <a href="https://isitdry.herokuapp.com/" target="_blank"><img src="./assets/images/isitdry.png" alt="Screenshot of weather forcast from IsItDry? Flask application"></a> 
+                </article>
+                <article class="work-card"> 
+                    <a href="https://boonerealestate.com/" target="_blank"><img src="./assets/images/boonerealestate.png" alt="BooneRealEstate data in QGIS software screenshot"></a> 
+                </article>
+                <article class="work-card"> 
+                    <a href="http://varivermonitor-streamlit.herokuapp.com/" target="_blank"><img src="./assets/images/varivermonitor.png" alt="Virginia River monitor screnshot of river level chart"></a> 
+                </article>
+            </div>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
