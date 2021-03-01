@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <h1>Erich Purpur Portfolio</h1>
+        <h1>Erich Purpur</h1>
         <nav>
             <a href="#about-me-heading">About Me</a>   <!-- Maybe slow delay involving webkit for hightlighted elements?-->
             <a href="#work-portfolio">Portfolio</a>
@@ -21,49 +26,14 @@
     <main>
         <section class="portfolio-section">
             <div class="about-me">
-                <h2>About Me</h2>
                 <img src="https://avatars.githubusercontent.com/u/36010345?s=460&u=10800388b8f1955e283ad5dec7a574f39e9215af&v=4" alt="Image of Erich with mountains and water">
             </div>
-
             <div class="about-me">
-                <p>I'm currently a Research Librarian for Science & Engineering at the University of Virginia in Charlottesville, VA. In my career I am looking to leverage my 
+                <h2>About Me</h2>
+                <p>I'm a Research Librarian for Science & Engineering at the University of Virginia in Charlottesville, VA. In my career I am looking to leverage my 
                 programming and Geographic Information System (GIS) skills </p> 
-                <h3>Technical Skills</h3>
-                <div id="skills">
-                    <div class="skill-list">
-                        <h4>Python</h4>
-                        <ul>
-                            <li>Pandas, Numpy, Matplotlib</li>
-                            <li>Django</li>
-                            <li>Flask</li>
-                            <li>Streamlit</li>
-                            <li>ArcPy (ArcGIS python API)</li>
-                            <li>PyQGIS (QGIS python API)</li>
-                        </ul>
-                    </div>
-                    <div class="skill-list">
-                        <h4>GIS</h4>
-                        <ul>
-                            <li>ArcGIS Enterprise</li>
-                            <li>QGIS</li>
-                            <li>PostgreSQL/PostGIS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-list">
-                        <h4>Other</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Salesforce</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="about-me">
-                    <p>In my free time I love to be outside, especially rock climbing or skiing.
-                    I also like to learn foreign languages, travel, cook, and spend time with my girlfriend.</p>
-                </div>
+                <p>In my free time I love to be outside, especially rock climbing or skiing.
+                I am a cat person and am also interested in learning foreign languages, personal finance, and spending time with my girlfriend.</p>
             </div>
         </section>
 
@@ -71,7 +41,7 @@
             <h2>Work Portfolio</h2>
             <div id="work-cards">
                 <article class="work-card">
-                    <a href="https://onefigrapp.lib.virginia.edu/app/" target="_blank"><img src="./assets/images/onefigrapp.png" alt="screenshot from onefigrapp, UVA Library application"></a> 
+                    <a href="https://onefigrapp.herokuapp.com/app/" target="_blank"><img src="./assets/images/onefigrapp.png" alt="screenshot from onefigrapp, UVA Library application"></a> 
                 </article>
                 <article class="work-card">
                     <a href="http://www.keylogeconomics.com/ecovaluator.html" target="_blank"><img src="./assets/images/ecovaluator.png" alt="QGIS EcoValuator plugin screnshot"></a> 
@@ -89,15 +59,14 @@
         </section>
 
         <section class="portfolio-section" id="contact">
-            <div class="contact-info">
+            <div>
                 <h2>Contact Info</h2>
-            </div>
-            <div class="contact-info"> 
-                <p class='info-item'>epurpur@gmail.com</p>
-                <p class='info-item'>(828) 773-7140</p>
-                <a class='info-item' href="https://epurpur.github.io/">Github Pages</a>
-                <img src="./assets/images/GitHub-Mark-64px.png" alt="GitHub Icon">
-                <img src="./assets/images/linkedin.png" alt="LinkedIn Icon">
+                <div id="contact-info">
+                    <a href="mailto:epurpur@gmail.com" target="_blank"><img src="./assets/images/email.png" alt="email link with letter icon"></a> 
+                    <a href="https://www.linkedin.com/in/erich-purpur-140a1433/" target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn logo"></a> 
+                    <a href="https://github.com/epurpur" target="_blank"><img src="./assets/images/github.png" alt="Github logo"></a> 
+                    <a href="https://gis.stackexchange.com/users/118507/erich-purpur" target="_blank"><img src="./assets/images/stackoverflow.png" alt="StackOverflow logo"></a> 
+                </div>
             </div>
         </section>
     </main>
