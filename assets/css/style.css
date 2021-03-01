@@ -9,7 +9,8 @@
     --font-cream: rgb(223, 223, 223);
 
     --text-header: 'Shadows Into Light', cursive;
-    --text-normal: 'Newsreader', serif
+    --text-normal: 'Newsreader', serif;
+    --line-height: 27px;
 }
 
 
@@ -116,7 +117,7 @@ section div:nth-child(2) {width: 60%;}
 .about-me p {
     text-align: center;
     font-size: 22px;
-    
+    line-height: var(--line-height);
     margin-bottom: 20px;
 }
 
@@ -191,10 +192,11 @@ section div:nth-child(2) {width: 60%;}
 .card p {
     width: 45%;
     text-align: center;
+    line-height: var(--line-height);
 }
 
 .card-text h3 {
-    padding-bottom: 15px;
+    padding-bottom: 18px;
     color: var(--font-pink);
     font-family: var(--text-header);
     font-size: 45px;
