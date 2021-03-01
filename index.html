@@ -13,32 +13,64 @@
         <h1>Erich Purpur Portfolio</h1>
         <nav>
             <a href="#about-me-heading">About Me</a>   <!-- Maybe slow delay involving webkit for hightlighted elements?-->
-            <a href="#work-portfolio">Work</a>
-            <a href="#">Contact</a>
-            <a href="#">Resume</a>
+            <a href="#work-portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
         <section class="portfolio-section">
-            <div id='about-me-heading'>
+            <div class="about-me">
                 <h2>About Me</h2>
                 <img src="https://avatars.githubusercontent.com/u/36010345?s=460&u=10800388b8f1955e283ad5dec7a574f39e9215af&v=4" alt="Image of Erich with mountains and water">
             </div>
-            <div id='about-me-info'>
-                <p>I'm currently a Research Librarian for Science & Engineering at the University of Virginia (UVA) in Charlottesville, VA. My background is in Geographic Information Systems (GIS) and I am
-                most interested in combining my programming skills with GIS applications, in particular Free and Open Source (FOSS) GIS software. I teach workshops and courses
-                at UVA related to python programming and GIS topics. I also participate in developing internal UVA library web applications, built on python web framworks such as Django
-                and Flask, as well as data wrangling and data science methods. On the side, I've participated in the development of a plugin for QGIS, an open source GIS mapping software.
-                The plugin, called EcoValuator, is a downloadable package to QGIS. I've also collaborated with a friend, who is a real estate agent, to develop a multi-faceted project involving
-                a direct mailing campaign, managing internal data in Salesforce, and developing workflows to interface with 3rd part software.
-                <br></br>
-                In my free time I love to be outside, especially rock climbing and skiing. I also like to learn foreign languages, travel, cook badly, and spend time with my girlfriend.</p>
+
+            <div class="about-me">
+                <p>I'm currently a Research Librarian for Science & Engineering at the University of Virginia in Charlottesville, VA. In my career I am looking to leverage my 
+                programming and Geographic Information System (GIS) skills </p> 
+                <h3>Technical Skills</h3>
+                <div id="skills">
+                    <div class="skill-list">
+                        <h4>Python</h4>
+                        <ul>
+                            <li>Pandas, Numpy, Matplotlib</li>
+                            <li>Django</li>
+                            <li>Flask</li>
+                            <li>Streamlit</li>
+                            <li>ArcPy (ArcGIS python API)</li>
+                            <li>PyQGIS (QGIS python API)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-list">
+                        <h4>GIS</h4>
+                        <ul>
+                            <li>ArcGIS Enterprise</li>
+                            <li>QGIS</li>
+                            <li>PostgreSQL/PostGIS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-list">
+                        <h4>Other</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Salesforce</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-me">
+                    <p>In my free time I love to be outside, especially rock climbing or skiing.
+                    I also like to learn foreign languages, travel, cook, and spend time with my girlfriend.</p>
+                </div>
+
             </div>
+
         </section>
 
         <section class="portfolio-section" id="work-portfolio">
-            <h2 id="work-portfolio-title">Work Portfolio</h2>
+            <h2>Work Portfolio</h2>
             <div id="work-cards">
                 <article class="work-card">
                     <a href="https://onefigrapp.lib.virginia.edu/app/" target="_blank"><img src="./assets/images/onefigrapp.png" alt="screenshot from onefigrapp, UVA Library application"></a> 
@@ -58,7 +90,18 @@
             </div>
         </section>
 
-
+        <section class="portfolio-section" id="contact">
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+            </div>
+            <div class="contact-info"> 
+                <p class='info-item'>epurpur@gmail.com</p>
+                <p class='info-item'>(828) 773-7140</p>
+                <a class='info-item' href="https://epurpur.github.io/">Github Pages</a>
+                <img src="./assets/images/GitHub-Mark-64px.png" alt="GitHub Icon">
+                <img src="./assets/images/linkedin.png" alt="LinkedIn Icon">
+            </div>
+        </section>
     </main>
 
 

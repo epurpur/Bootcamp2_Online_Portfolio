@@ -1,19 +1,26 @@
 
 /* css variables/properties */
 :root {
-    --header-size: 65px;
+    --header-size: 50px;
     --border-radius: 10px;
 }
 
-/* Global properties */
-* {
 
-}
+
+/* Global properties */
+
+
 
 
 /* <main> */
 main section:nth-child(odd) {background-color:rgb(226, 223, 223)}
-main section:nth-child(even) {background-color:rgb(209, 206, 206)}
+main section:nth-child(even) {background-color:rgb(241, 211, 211)}
+
+h2 {
+    text-align: center;
+    font-size: var(--header-size);
+}
+
 
 
 /* <header> */
@@ -25,7 +32,7 @@ header {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 55px;
     margin: 10px;
     width: 55%;
     text-align: center;
@@ -40,14 +47,18 @@ nav {
 }
 
 nav a {
-    font-size: 35px;
+    font-size: 42px;
     text-decoration: none;
     color: black;
 }
 
 nav a:hover {
-    font-size: 40px;
+    -webkit-transition: font-size 0.5s;
+    font-size: 45px;
+    color:rgb(103, 103, 103);
 }
+
+
 
 /* <section> */
 
@@ -61,36 +72,61 @@ nav a:hover {
 section div:nth-child(1) {width: 35%;}
 section div:nth-child(2) {width: 65%;}
 
+
+
 /* <section> - About Me */
 
-#about-me-heading {
+.about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: var(--header-size);
-    text-align: center;
 }
 
-#about-me-heading p {
-    margin-top: 40px;
-}
-
-#about-me-heading img {
-    height: 300px;
-    width: 300px;
+.about-me img {
+    height: 350px;
+    width: 350px;
     margin: auto;
     border-radius: var(--border-radius);
     filter: drop-shadow(10px 10px 10px black);
 }
 
-#about-me-info {
-    margin: auto;
-}
-
-#about-me-info p {
+.about-me p {
     text-align: center;
     font-size: 22px;
+    margin-bottom: 20px;
 }
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: var(--border-radius);
+}
+
+.skill-list {
+    width: 33%;
+}
+
+.skill-list h4 {
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.skill-list li {
+    text-align: center;
+    margin: 5px;
+    font-size: 18px;
+}
+
 
 
 /* <section> - Work Portfolio */
@@ -101,7 +137,7 @@ section div:nth-child(2) {width: 65%;}
     width: 100%
 }
 
-#work-portfolio-title {
+#work-portfolio h2 {
     text-align: center;
     font-size: var(--header-size);
 }
@@ -128,6 +164,34 @@ section div:nth-child(2) {width: 65%;}
     height: 100%;
     border-radius: var(--border-radius);
 }
+
+.work-card img:hover {
+    -webkit-transition: opacity 0.5s;
+    opacity: .5;
+}
+
+
+
+/* <section> - Contact */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-item {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
 
 
 
