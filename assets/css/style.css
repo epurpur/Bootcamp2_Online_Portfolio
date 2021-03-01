@@ -1,7 +1,7 @@
 
 /* css variables/properties */
 :root {
-    --header-size: 55px;
+    --header-size: 60px;
     --border-radius: 15px;
 
     --background-black: #1A1A1D;
@@ -32,7 +32,6 @@ h2 {
     text-decoration: underline;
     margin-bottom: 40px;
 }
-
 
 
 /* <header> */
@@ -69,7 +68,7 @@ nav a {
 
 nav a:hover {
     -webkit-transition: font-size 0.5s;
-    font-size: 45px;
+    font-size: 55px;
     color: var(--font-cream);
     text-decoration: underline;
 }
@@ -198,7 +197,7 @@ section div:nth-child(2) {width: 60%;}
     padding-bottom: 15px;
     color: var(--font-pink);
     font-family: var(--text-header);
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .card-text {
@@ -235,6 +234,23 @@ section div:nth-child(2) {width: 60%;}
 
 
 
+/* <footer */
+
+footer {
+    background-color: var(--background-black);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-cream);
+    font-family: var(--text-header);
+    font-size: 22px;
+}
+
+footer p:after {
+    content: ' Erich Purpur';
+    color: var(--font-pink);
+}
 
 
 
