@@ -7,3 +7,5 @@ It contains three sections about me.
 * About Me
 * Work Portfolio
 * Contact Information
+
+The site is also responsive to different screen sizes on different devices.
