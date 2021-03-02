@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/media_queries.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,41 +18,40 @@
     <header>
         <h1>Erich Purpur</h1>
         <nav>
-            <a href="#about-me-heading">About Me</a>   <!-- Maybe slow delay involving webkit for hightlighted elements?-->
+            <a href="#about-me-section">About Me</a>   <!-- Maybe slow delay involving webkit for hightlighted elements?-->
             <a href="#work-portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section class="portfolio-section">
+        <section class="portfolio-section" id='about-me-section'>
             <div class="about-me">
                 <img src="https://avatars.githubusercontent.com/u/36010345?s=460&u=10800388b8f1955e283ad5dec7a574f39e9215af&v=4" alt="Image of Erich with mountains and water">
             </div>
             <div class="about-me">
                 <h2>About Me</h2>
                 <p>I'm a Research Librarian for Science & Engineering at the University of Virginia in Charlottesville, VA. In my career I am looking to leverage my 
-                programming and Geographic Information System (GIS) skills </p> 
+                programming and Geographic Information System (GIS) skills together. </p> 
                 <p>In my free time I love to be outside, especially rock climbing or skiing.
                 I am a cat person but I like dogs too. I'm also interested in learning foreign languages, personal finance, and spending time with my girlfriend.</p>
             </div>
         </section>
 
         <section class="portfolio-section" id="work-portfolio">
-            <h2>Work Portfolio</h2>
+            <h2>Portfolio</h2>
             <div id="work-cards">
                 <article class="card">
-                    <a href="https://onefigrapp.herokuapp.com/app/" target="_blank"><img src="./assets/images/onefigrapp.png" alt="screenshot from onefigrapp, UVA Library application"></a> 
+                    <a href="https://onefigrapp.herokuapp.com" target="_blank"><img src="./assets/images/onefigrapp.png" alt="screenshot from onefigrapp, UVA Library application"></a> 
                     <div class='card-text'>
                         <h3>OneFigr App</h3>
                         <p>The OneFigr App analyzes and visualizes collection use metrics for the University of Virgina Library organization. This is a python web application built using the Django
                         framework. The app takes datasets hosted in Amazon Web Services (AWS) and analyzes them in various ways using the python libraries pandas and numpy before returning the data to the front-end.
-                        The user interface allows users to modify their view of the data on the fly using JQuery and displays it in real time using a Javascript charting library, HighCharts. Also
-                        included are various modals for searching and seeing more information about the dataset.
+                        The user interface allows users to modify their view of the data on the fly using JQuery and displays it in real time using a Javascript charting library, HighCharts. 
                         </p>
                     </div>
                 </article>
-                <article class="card">
+                <article class="card column-reverse">
                     <div class='card-text'>
                         <h3>EcoValuator Plugin</h3>
                         <p>This is a python plugin built for the Open Source GIS software, QGIS. EcoValuator was built for Key-Log Economics to be used as a quick and dirty means of analyzing land valuation
@@ -64,13 +64,13 @@
                     <a href="https://boonerealestate.com/" target="_blank"><img src="./assets/images/boonerealestate.png" alt="BooneRealEstate data in QGIS software screenshot"></a> 
                     <div class='card-text'>
                         <h3>Boone Real Estate</h3>
-                        <p>Since 2018 I've collaborated with Boone Real Estate (in Boone, NC) to improve and manage a direct-mail marketing campaign. We began with publicly available tax parcel data. I then set up
-                        a PostgreSQL database and began to clean the large dataset (~230k records) via scripting workflows in python, using the pandas and numpy libraries, and the PostgreSQL's PostGIS extension. I later
-                        merged the direct marketing data into company's Salesforce instance, which I merged with previous company data and improved to maintain data integrity. I then set-up a 3rd party software, Mapsimise,
-                        to view Salesforce records in a spatial manner which allows the company to easily do custom direct-mail processes.</p>
+                        <p>Since 2018 I've collaborated with Boone Real Estate to improve and manage a direct-mail marketing campaign. I set up a PostgreSQL database and began to clean 
+                        the large dataset (~230k records) via scripting workflows in python, using the pandas and numpy libraries, and PostgreSQL's PostGIS extension. I later
+                        integrated this data into the company's Salesforce instance. I then set-up a 3rd party software, Mapsimise,
+                        to view Salesforce records in a spatial manner and the company to easily do custom direct-mail processes.</p>
                     </div>
                 </article>
-                <article class="card">
+                <article class="card column-reverse">
                     <div class='card-text'>
                         <h3>Is It Dry?</h3>
                         <p>Is It Dry? is my original programming passion project. As an avid rock climber, I am obsessed with monitoring environmental conditions in order to have the best experience while I'm out on the rocks.
