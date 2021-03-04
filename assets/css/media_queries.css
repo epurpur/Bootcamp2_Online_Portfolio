@@ -1,12 +1,19 @@
 
+/* Media queries are in order from largest to smallest screen size */
+
+
 @media screen and (max-width: 1245px) {
 
-    /* <main> */
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*       <main>       */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     section div:nth-child(1) {width: 40%;}
     section div:nth-child(2) {width: 60%;}
 
+    /*~~~~~~~~~~~~~~~~~~~~*/
     /* <section> About Me */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     .about-me p {
         font-family: var(--text-normal);
@@ -14,9 +21,12 @@
     }
 }
 
+
 @media screen and (max-width: 1182px) {
     
-    /* <header> */
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*     <header>       */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     nav a {
         font-size: 40px;
@@ -26,35 +36,46 @@
         font-size: 45px;
     }
 
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - About Me */
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
 
     .about-me img {
         height: 350px;
         width: 350px;
     }
     
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     .card-text p {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width: 1056px) {
 
-    /* <main> */
+@media screen and (max-width: 1056px) {
+    
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*       <main>       */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     section div:nth-child(1) {width: 45%;}
     section div:nth-child(2) {width: 60%;}
-
+    
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - About Me */
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
 
     .about-me p {
         font-family: var(--text-normal);
         font-size: 16px;
     }
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     #work-portfolio {
         height: 1950px;
@@ -75,8 +96,10 @@
 
 
 @media screen and (max-width: 920px) {
-
-    /* <header> */
+    
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*      <header>      */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     header {
         display: flex;
@@ -89,7 +112,9 @@
         padding-bottom: 10px;
     }
 
-    /* <section> */
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*     <section>      */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     .portfolio-section {
         display: flex;
@@ -100,13 +125,17 @@
     section div:nth-child(1) {width: 100%;}
     section div:nth-child(2) {width: 100%;}
 
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - About Me */
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
 
     .about-me img {
         display: none;
     }
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     #work-portfolio {
         height: 2700px;
@@ -139,8 +168,9 @@
         width: 95%
     }
 
-
+    /*~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Contact */
+    /*~~~~~~~~~~~~~~~~~~~~~*/
 
     #contact {
         height: 200px;
@@ -149,7 +179,9 @@
 
 @media screen and (max-width: 695px) {
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     #work-portfolio {
         height: 2950px;
@@ -162,7 +194,9 @@
 
 @media screen and (max-width: 593px) {
 
-    /* <header> */
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*      <header>      */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     header {
         height: 175px;
@@ -172,13 +206,17 @@
         font-size: 45px;
     }
 
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - About Me */
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
 
     #about-me-section {
         height: 500px;
     }
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     #work-portfolio {
         height: 3050px;
@@ -191,7 +229,9 @@
 
 @media screen and (max-width: 493px) {
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     #work-portfolio {
         height: 3200px;
@@ -209,7 +249,9 @@
 
 @media screen and (max-width: 414px) {
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     .card-text h3 {
         font-size: 35px;
@@ -218,7 +260,9 @@
 
 @media screen and (max-width: 375px) {
 
-    /* <header> */
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*      <header>      */
+    /*~~~~~~~~~~~~~~~~~~~~*/
 
     h1 {
         font-size: 40px;
@@ -232,7 +276,9 @@
         font-size: 35px;
     }
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* <section> - Work Portfolio */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     .card img {
         width: 280px;
