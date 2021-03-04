@@ -18,7 +18,7 @@
 /* Global properties */
 
 * {
-    /*border: white 1px solid;*/
+    scroll-behavior: smooth;   /* adds slow scrolling while navigating around page */
 }
 
 
@@ -195,17 +195,17 @@ section div:nth-child(2) {width: 60%;}
     line-height: var(--line-height);
 }
 
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card-text h3 {
     padding-bottom: 18px;
     color: var(--font-pink);
     font-family: var(--text-header);
     font-size: 45px;
-}
-
-.card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .card-text p {
@@ -214,6 +214,15 @@ section div:nth-child(2) {width: 60%;}
     font-size: 19px;
 }
 
+.card-text a {
+    text-decoration: none;
+    color: var(--font-pink);
+}
+
+.card-text a:hover {
+    -webkit-transition: opacity 0.5s;
+    opacity: 0.5;
+}
 
 /* <section> - Contact */
 
