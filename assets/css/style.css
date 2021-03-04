@@ -1,5 +1,24 @@
 
+/* Structure of CSS document.
+
+- CSS variable/property definitions
+- global element properties
+- <main> properties
+- <header> properties
+- general <section> properties
+- about me <section>
+- work portfolio <section>
+- contact <section>
+- <footer> properties
+
+*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* css variables/properties */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 :root {
     --header-size: 60px;
     --border-radius: 15px;
@@ -14,15 +33,18 @@
 }
 
 
-
-/* Global properties */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*     Global properties     */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 * {
     scroll-behavior: smooth;   /* adds slow scrolling while navigating around page */
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*           <main>          */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* <main> */
 main section:nth-child(odd) {background-color: #4E4E50}
 main section:nth-child(even) {background-color:#1A1A1D}
 
@@ -34,8 +56,10 @@ h2 {
     margin-bottom: 40px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*         <header>          */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* <header> */
 
 header {
     display: flex;
@@ -75,8 +99,10 @@ nav a:hover {
 }
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*       General <section>   */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* <section> */
 
 .portfolio-section {
     display: flex;
@@ -86,12 +112,15 @@ nav a:hover {
     padding-top: 20px;
 }
 
+
 section div:nth-child(1) {width: 35%;}
 section div:nth-child(2) {width: 60%;}
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*   <section> - About Me    */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* <section> - About Me */
 
 .about-me {
     display: flex;
@@ -148,8 +177,10 @@ section div:nth-child(2) {width: 60%;}
 }
 
 
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* <section> - Work Portfolio */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
 #work-portfolio {
     height: 2200px;
@@ -224,7 +255,10 @@ section div:nth-child(2) {width: 60%;}
     opacity: 0.5;
 }
 
-/* <section> - Contact */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*    <section> - Contact    */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
 #contact {
     height: 400px;
@@ -244,8 +278,10 @@ section div:nth-child(2) {width: 60%;}
 }
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*         <footer>          */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* <footer */
 
 footer {
     background-color: var(--background-black);
